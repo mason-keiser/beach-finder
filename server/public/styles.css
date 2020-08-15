@@ -32,3 +32,18 @@ header{
     font-family: 'Rock salt';
     padding-left: 1rem;
 }
+
+.mapContainer {
+    padding-top: 1rem;
+}
+
+.homeButton {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+    font-family: 'Rock salt';
+    font-size: 20px;
+}

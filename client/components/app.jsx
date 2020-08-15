@@ -1,5 +1,6 @@
 import React from 'react';
 import Homepage from './homepage';
+import Map from './map';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -33,8 +34,15 @@ export default class App extends React.Component {
   }
 
   render() {
-    return (
-      <Homepage/>
-    )
+    const changeView = this.state.view.name === 'home'
+        ? <Homepage/>
+        : this.state.view.name === 'map'
+            ? <Map/>
+            : null
+    return(
+        <div>
+            {changeView}
+        </div>
+    );
   }
 }

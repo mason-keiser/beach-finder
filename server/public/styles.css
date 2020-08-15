@@ -1,0 +1,30 @@
+.logo{
+    display: block;
+    margin-left: 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+.background {
+    background-color: black;
+    height: 720px;
+    width: 395px;
+}
+
+header{
+    color: white;
+    font-size: 40px;
+    font-family: 'Rock salt';
+    text-align: center;
+    padding-top: 2rem;
+} 
+
+.locationInput {
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    margin: 0 auto;
+    font-family: 'Rock salt';
+    padding-left: 1rem;
+}

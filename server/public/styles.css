@@ -40,10 +40,10 @@ header{
 .homeButton {
     position: fixed;
     left: 50%;
-    bottom: 20px;
+    bottom: 0;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     color: white;
     font-family: 'Rock salt';
-    font-size: 20px;
+    font-size: 15px;
 }

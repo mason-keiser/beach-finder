@@ -3,7 +3,7 @@ import {Map, GoogleApiWrapper } from 'google-maps-react';
 
 const mapStyles = {
     width: '380px',
-    height: '610px',
+    height: '650px',
     marginLeft: '1rem',
     border: '1px solid white' 
   };

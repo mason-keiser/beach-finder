@@ -48,7 +48,7 @@ onClose(props) {
                 >
                     <Marker
                       onClick={this.onMarkerClick}
-                      name={'Laguna Niguel'}
+                      name={'current location'}
                     />
                     <InfoWindow
                       marker={this.state.activeMarker}

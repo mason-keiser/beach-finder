@@ -25,12 +25,12 @@ header{
 } 
 
 .locationInput {
-    width: 300px;
-    height: 40px;
-    background-color: white;
-    margin: 0 auto;
+    color: white;
+    text-align: center;
     font-family: 'Rock salt';
-    padding-left: 1rem;
+    border: 1px solid white;
+    width: 200px;
+    margin: 0 auto;
 }
 
 .mapContainer {

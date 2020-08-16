@@ -12,8 +12,10 @@ export default class App extends React.Component {
         name: 'home',
         params: {}
       },
+      beaches: []
     };
     this.setView = this.setView.bind(this);
+    this.viewBeachInfo = this.viewBeachInfo.bind(this);
   }
 
   componentDidMount() {
@@ -22,6 +24,16 @@ export default class App extends React.Component {
       .then(data => this.setState({ message: data.message || data.error }))
       .catch(err => this.setState({ message: err.message }))
       .finally(() => this.setState({ isLoading: false }));
+  }
+
+  viewBeachInfo() {
+    fetch('/api/beaches')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          beaches: data
+        })
+      })
   }
 
   setView(names, params) {

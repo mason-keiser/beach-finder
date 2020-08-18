@@ -48,7 +48,27 @@ onClose(props) {
                 >
                     <Marker
                       onClick={this.onMarkerClick}
-                      name={'current location'}
+                      name={'Current Location'}
+                    />
+                    <Marker
+                      position={{lat: 33.542721, lng: -117.785355}}
+                      onClick={this.onMarkerClick}
+                      name={'Laguna Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.608768, lng: -117.873360}}
+                      onClick={this.onMarkerClick}
+                      name={'Newport Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.659485, lng: -117.998802}}
+                      onClick={this.onMarkerClick}
+                      name={'Huntington Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.467224, lng: -117.698097}}
+                      onClick={this.onMarkerClick}
+                      name={'Dana Point'}
                     />
                     <InfoWindow
                       marker={this.state.activeMarker}

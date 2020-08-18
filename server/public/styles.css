@@ -12,7 +12,7 @@ body {
 
 .background {
     background-color: black;
-    height: 736px;
+    height: 740px;
     width: 415px;
 }
 
@@ -29,7 +29,7 @@ header{
     text-align: center;
     font-family: 'Rock salt';
     border: 1px solid white;
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
 }
 

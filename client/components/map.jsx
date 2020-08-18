@@ -45,6 +45,7 @@ onClose(props) {
                   centerAroundCurrentLocation
                   google={this.props.google}
                   style={mapStyles}
+                  beachList={this.props.beachList}
                 >
                     <Marker
                       onClick={this.onMarkerClick}

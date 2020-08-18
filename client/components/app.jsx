@@ -51,7 +51,7 @@ export default class App extends React.Component {
     const changeView = this.state.view.name === 'home'
         ? <Homepage setView={this.setView}/>
         : this.state.view.name === 'map'
-            ? <Map setView={this.setView}/>
+            ? <Map setView={this.setView} beachList={this.state.beaches}/>
             : null
     return(
         <div>

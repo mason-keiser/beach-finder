@@ -22,6 +22,7 @@ header{
     font-family: 'Rock salt';
     text-align: center;
     padding-top: 2rem;
+    margin: auto;
 } 
 
 .locationInput {
@@ -46,4 +47,14 @@ header{
     color: white;
     font-family: 'Rock salt';
     font-size: 15px;
+}
+
+.hint {
+    color: white;
+    text-align: center;
+    font-family: 'Rock salt';
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    font-size: 11px;
 }

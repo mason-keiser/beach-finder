@@ -26,7 +26,8 @@ onMarkerClick(props, marker, e){
     selectedPlace: props,
     activeMarker: marker,
     showingInfoWindow: true
-  })};
+  })
+};
 
 onClose(props) {
   if (this.state.showingInfoWindow) {
@@ -46,10 +47,7 @@ onClose(props) {
                   google={this.props.google}
                   style={mapStyles}
                 >
-                    <Marker
-                      onClick={this.onMarkerClick}
-                      name={'Current Location'}
-                    />
+                    
                     <Marker
                       position={{lat: 33.542721, lng: -117.785355}}
                       onClick={this.onMarkerClick}

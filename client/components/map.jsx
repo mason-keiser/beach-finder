@@ -43,10 +43,11 @@ onClose(props) {
         return (
             <div className='background'>
                 <div className='mapContainer'>
-                <CurrentLocation
+                <Map
                   centerAroundCurrentLocation
                   google={this.props.google}
                   style={mapStyles}
+                  zoom={10}
                 >
                     <Marker
                       position={{lat: 33.542721, lng: -117.785355}}
@@ -77,7 +78,7 @@ onClose(props) {
                         <h4>{this.state.selectedPlace.name}</h4>
                     </div>
                     </InfoWindow>
-                </CurrentLocation>
+                </Map>
                 </div>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>
             </div>

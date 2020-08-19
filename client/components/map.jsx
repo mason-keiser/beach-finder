@@ -25,8 +25,9 @@ onMarkerClick(props, marker, e){
   this.setState({
     selectedPlace: props,
     activeMarker: marker,
-    showingInfoWindow: true
+    showingInfoWindow: false
   })
+  this.props.setView('weather', {props})
 };
 
 onClose(props) {
@@ -47,7 +48,6 @@ onClose(props) {
                   google={this.props.google}
                   style={mapStyles}
                 >
-                    
                     <Marker
                       position={{lat: 33.542721, lng: -117.785355}}
                       onClick={this.onMarkerClick}

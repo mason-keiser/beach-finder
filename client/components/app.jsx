@@ -1,6 +1,7 @@
 import React from 'react';
 import Homepage from './homepage';
 import Map from './map';
+import Weather from './weather';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -52,7 +53,9 @@ export default class App extends React.Component {
         ? <Homepage setView={this.setView}/>
         : this.state.view.name === 'map'
             ? <Map setView={this.setView}/>
-            : null
+            : this.state.view.name === 'weather'
+              ? <Weather setView={this.setView}/>
+              : null
     return(
         <div>
             {changeView}

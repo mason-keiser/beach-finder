@@ -54,7 +54,7 @@ export default class App extends React.Component {
         : this.state.view.name === 'map'
             ? <Map setView={this.setView}/>
             : this.state.view.name === 'weather'
-              ? <Weather setView={this.setView}/>
+              ? <Weather setView={this.setView} markerInfo={this.state.view}/>
               : null
     return(
         <div>

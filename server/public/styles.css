@@ -58,3 +58,65 @@ header{
     padding-top: 1.5rem;
     font-size: 11px;
 }
+
+.date{
+    color: white;
+    font-size: 20px;
+    font-family: 'Rock salt';
+    text-align: center;
+    padding-top: 2rem;
+    margin: auto;
+}
+
+.weather-box{
+    color: white;
+    font-size: 20px;
+    font-family: 'Rock salt';
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: auto;
+}
+
+.temp{
+    font-size: 60px;
+}
+
+.weather-header{
+    color: white;
+    font-size: 40px;
+    font-family: 'Rock salt';
+    text-align: center;
+    padding: 0;
+    border: 1px solid white;
+    width: 350px;
+}
+
+.weather-background{
+    background-color: black;
+    height: 740px;
+    width: 415px;
+    padding-top: 2rem;
+}
+
+.mapButton {
+    position: fixed;
+    right: 20%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+    font-family: 'Rock salt';
+    font-size: 15px;
+}
+
+.weatherHomeButton {
+    position: fixed;
+    left: 20%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    color: white;
+    font-family: 'Rock salt';
+    font-size: 15px;
+}

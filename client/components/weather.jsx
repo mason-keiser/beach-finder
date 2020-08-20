@@ -20,6 +20,25 @@ const dateBuilder = (d) => {
 export default class Weather extends React.Component{
     constructor(props) {
         super(props);
+        this.state = {
+            weatherInfo: {}
+        }
+        this.celsiusConverter = this.celsiusConverter.bind(this);
+    }
+
+    componentDidMount(){
+        fetch(`${api.baseurl}weather?q=${this.props.markerInfo.params.props.name}&units=metric&APPID=${api.key}`)
+            .then(res => res.json())
+            .then(result => {
+                this.setState({
+                    weatherInfo: {result}
+                })
+            })
+    }
+
+    celsiusConverter(val) {
+        let valNum = parseFloat(val);
+        return Math.round((valNum * 1.8) + 32) + 'fº' ;
     }
 
     render() {
@@ -30,7 +49,7 @@ export default class Weather extends React.Component{
                     <div className='date'>{dateBuilder(new Date())}</div>
                 </div>
                 <div className="weather-box">
-                    <div className="temp">50ºf</div>
+                    <div className="temp">{this.celsiusConverter(24.71) }</div>
                     <div className="weather">Raining</div>
                 </div>
                 <div className= 'weatherHomeButton' onClick={() => this.props.setView('home', {})}>Home</div>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from "react"
+
 
 const api = {
     key: "6d7d1e7d4d37757e05e72f81a893fa86",
@@ -29,7 +30,7 @@ export default class Weather extends React.Component{
             .then(res => res.json())
             .then(result => {
                 this.setState({
-                    weatherInfo: {result}
+                    weatherInfo: result
                 })
             })
     }
@@ -46,10 +47,16 @@ export default class Weather extends React.Component{
                 <div className='date-box'>
                     <div className='date'>{dateBuilder(new Date())}</div>
                 </div>
+                {( typeof this.state.weatherInfo.main != "undefined") ? (
+                <div> 
                 <div className="weather-box">
-                    <div className="temp">{this.celsiusConverter(24.71) }</div>
-                    <div className="weather">Raining</div>
-                </div>
+                    <div className="temp">{this.celsiusConverter(this.state.weatherInfo.main.temp) }</div>
+                    <div className="weather">{this.state.weatherInfo.weather[0].description}</div>
+                    <div className='temps'>Low: {this.state.weatherInfo.main.temp_min}</div>
+                    <div className='temps'>High: {this.state.weatherInfo.main.temp_max}</div>
+                </div> 
+                </div>)
+                : null }
                 <div className= 'weatherHomeButton' onClick={() => this.props.setView('home', {})}>Home</div>
                 <div className = 'mapButton' onClick={() => this.props.setView('map', {})}>Map</div>
             </div>

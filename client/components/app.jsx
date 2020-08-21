@@ -35,7 +35,6 @@ export default class App extends React.Component {
         this.setState({
           beaches: data
         })
-        console.log(this.state.beaches)
       })
   }
 

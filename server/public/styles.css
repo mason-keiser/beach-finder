@@ -120,3 +120,10 @@ header{
     font-family: 'Rock salt';
     font-size: 15px;
 }
+
+.temps {
+    color: white;
+    font-size: 15px;
+    font-family: 'Rock salt';
+    text-align: center;
+}

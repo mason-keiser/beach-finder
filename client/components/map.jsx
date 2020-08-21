@@ -1,6 +1,7 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 import CurrentLocation from './currentLocation';
+import { googleApi } from './api';
 
 
 const mapStyles = {
@@ -79,5 +80,5 @@ onClose(props) {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyC5tWM4fIw56Hb1cZ9cg6bbBKwwSR5rZy8'
+    apiKey: googleApi
   })(MapContainer);

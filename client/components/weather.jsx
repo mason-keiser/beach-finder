@@ -1,10 +1,5 @@
 import React, { useState } from "react"
-
-
-const api = {
-    key: "6d7d1e7d4d37757e05e72f81a893fa86",
-    baseurl: "http://api.openweathermap.org/data/2.5/"
-}
+import api from './api'
 
 function dateBuilder(d) {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

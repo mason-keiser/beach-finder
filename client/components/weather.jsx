@@ -47,8 +47,8 @@ export default class Weather extends React.Component{
                 <div className="weather-box">
                     <div className="temp">{this.celsiusConverter(this.state.weatherInfo.main.temp) }</div>
                     <div className="weather">{this.state.weatherInfo.weather[0].description}</div>
-                    <div className='temps'>Low: {this.state.weatherInfo.main.temp_min}</div>
-                    <div className='temps'>High: {this.state.weatherInfo.main.temp_max}</div>
+                    <div className='temps'>Low: {this.celsiusConverter(this.state.weatherInfo.main.temp_min)}</div>
+                    <div className='temps'>High: {this.celsiusConverter(this.state.weatherInfo.main.temp_max)}</div>
                     <div className='joke'> Ever wonder just how many clouds are in the sky? No need to wonder anymore.. There('s) only <span>{this.state.weatherInfo.clouds.all}</span> clouds out today!</div>
                 </div> 
                 </div>)

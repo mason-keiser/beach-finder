@@ -16,7 +16,7 @@ export default class Homepage extends React.Component {
                     <div className='logo'>
                         <img src="/images/skull-surfer.jpg" alt=""/>
                     </div>
-                <div className='locationInput' onClick={() => this.props.setView('map', {})}>Find General Location</div>
+                <div className='locationInput' onClick={() => this.props.setView('map', {})}>Find Beaches</div>
                 <div className='hint'>( Hint... Click on marker to display weather )</div>
             </div>
         )

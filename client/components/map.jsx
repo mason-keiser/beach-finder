@@ -71,6 +71,16 @@ onClose(props) {
                       onClick={this.onMarkerClick}
                       name={'Dana Point'}
                     />
+                    <Marker
+                      position={{lat: 33.427353,lng: -117.612602}}
+                      onClick={this.onMarkerClick}
+                      name={'San Clemente'}
+                    />
+                    <Marker
+                      position={{lat: 33.770050,lng: -118.193741}}
+                      onClick={this.onMarkerClick}
+                      name={'Long Beach'}
+                    />
                 </CurrentLocation>
                 </div>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>

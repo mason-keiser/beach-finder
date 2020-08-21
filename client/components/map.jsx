@@ -102,16 +102,6 @@ onClose(props) {
                       name={'Capistrano Beach'}
                     />
                     <Marker
-                      position={{lat: 33.640670, lng: -117.594550}}
-                      onClick={this.onMarkerClick}
-                      name={'Rancho Santa Margarita'}
-                    />
-                    <Marker
-                      position={{lat: 33.685909, lng: -117.824722}}
-                      onClick={this.onMarkerClick}
-                      name={'Irvine'}
-                    />
-                    <Marker
                       position={{lat: 33.044800, lng: -117.292450}}
                       onClick={this.onMarkerClick}
                       name={'Encinitas'}
@@ -125,6 +115,31 @@ onClose(props) {
                       position={{lat: 32.832809, lng: -117.271271}}
                       onClick={this.onMarkerClick}
                       name={'La Jolla'}
+                    />
+                    <Marker
+                      position={{lat: 33.166039, lng: -117.337929}}
+                      onClick={this.onMarkerClick}
+                      name={'Carlsbad'}
+                    />
+                    <Marker
+                      position={{lat: 34.420830, lng: -119.698189}}
+                      onClick={this.onMarkerClick}
+                      name={'Santa Barbara'}
+                    />
+                    <Marker
+                      position={{lat: 34.019455, lng: -118.491188}}
+                      onClick={this.onMarkerClick}
+                      name={'Santa Monica'}
+                    />
+                    <Marker
+                      position={{lat: 34.025921, lng: -118.779755}}
+                      onClick={this.onMarkerClick}
+                      name={'Malibu'}
+                    />
+                    <Marker
+                      position={{lat: 34.280491, lng: -119.294518}}
+                      onClick={this.onMarkerClick}
+                      name={'Ventura'}
                     />
                 </CurrentLocation>
                 </div>

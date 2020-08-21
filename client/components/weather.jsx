@@ -54,7 +54,7 @@ export default class Weather extends React.Component{
                     <div className="weather">{this.state.weatherInfo.weather[0].description}</div>
                     <div className='temps'>Low: {this.state.weatherInfo.main.temp_min}</div>
                     <div className='temps'>High: {this.state.weatherInfo.main.temp_max}</div>
-                    <div className='joke'> Ever wonder just how many clouds are in the sky? No need to wonder anymore.. There('s) only {this.state.weatherInfo.clouds.all} clouds out today!</div>
+                    <div className='joke'> Ever wonder just how many clouds are in the sky? No need to wonder anymore.. There('s) only <span>{this.state.weatherInfo.clouds.all}</span> clouds out today!</div>
                 </div> 
                 </div>)
                 : null }

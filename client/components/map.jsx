@@ -1,6 +1,7 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
-import CurrentLocation from './currentLocation'
+import CurrentLocation from './currentLocation';
+
 
 const mapStyles = {
     width: '380px',
@@ -43,7 +44,7 @@ onClose(props) {
         return (
             <div className='background'>
                 <div className='mapContainer'>
-                <CurrentLocation
+                <Map
                   centerAroundCurrentLocation
                   google={this.props.google}
                   style={mapStyles}
@@ -69,16 +70,7 @@ onClose(props) {
                       onClick={this.onMarkerClick}
                       name={'Dana Point'}
                     />
-                    <InfoWindow
-                      marker={this.state.activeMarker}
-                      visible={this.state.showingInfoWindow}
-                      onClose={this.onClose}
-                    >
-                    <div>
-                        <h4>{this.state.selectedPlace.name}</h4>
-                    </div>
-                    </InfoWindow>
-                </CurrentLocation>
+                </Map>
                 </div>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>
             </div>

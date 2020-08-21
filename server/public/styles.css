@@ -137,3 +137,7 @@ header{
     padding-right: 0.5rem;
     padding-left: 0.5rem;
 }
+
+span{
+    font-size: 20px;
+}

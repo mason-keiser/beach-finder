@@ -81,6 +81,51 @@ onClose(props) {
                       onClick={this.onMarkerClick}
                       name={'Long Beach'}
                     />
+                    <Marker
+                      position={{lat: 33.195911,lng: -117.379517}}
+                      onClick={this.onMarkerClick}
+                      name={'Oceanside'}
+                    />
+                    <Marker
+                      position={{lat: 33.844980, lng: -118.387240}}
+                      onClick={this.onMarkerClick}
+                      name={'Redondo Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.729880, lng: -118.041670}}
+                      onClick={this.onMarkerClick}
+                      name={'Bolsa Chica'}
+                    />
+                    <Marker
+                      position={{lat: 33.458420, lng: -117.665180}}
+                      onClick={this.onMarkerClick}
+                      name={'Capistrano Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.640670, lng: -117.594550}}
+                      onClick={this.onMarkerClick}
+                      name={'Rancho Santa Margarita'}
+                    />
+                    <Marker
+                      position={{lat: 33.685909, lng: -117.824722}}
+                      onClick={this.onMarkerClick}
+                      name={'Irvine'}
+                    />
+                    <Marker
+                      position={{lat: 33.044800, lng: -117.292450}}
+                      onClick={this.onMarkerClick}
+                      name={'Encinitas'}
+                    />
+                    <Marker
+                      position={{lat: 32.959389, lng: -117.266296}}
+                      onClick={this.onMarkerClick}
+                      name={'Del Mar'}
+                    />
+                    <Marker
+                      position={{lat: 32.832809, lng: -117.271271}}
+                      onClick={this.onMarkerClick}
+                      name={'La Jolla'}
+                    />
                 </CurrentLocation>
                 </div>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>

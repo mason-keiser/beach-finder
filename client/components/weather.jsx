@@ -21,13 +21,23 @@ export default class Weather extends React.Component{
     }
 
     componentDidMount(){
-        fetch(`${api.baseurl}weather?q=${this.props.markerInfo.params.props.name}&units=metric&APPID=${api.key}`)
-            .then(res => res.json())
-            .then(result => {
-                this.setState({
-                    weatherInfo: result
+        if (this.props.markerInfo.params.props.name === 'Current Location') {
+            fetch(`${api.baseurl}weather?lat=${this.props.markerInfo.params.props.mapCenter.lat}&lon=${this.props.markerInfo.params.props.mapCenter.lng}&units=metric&appid=${api.key}`)
+                .then(res => res.json())
+                .then(result => {
+                    this.setState({
+                        weatherInfo: result
+                    })
                 })
-            })
+        } else {
+            fetch(`${api.baseurl}weather?q=${this.props.markerInfo.params.props.name}&units=metric&APPID=${api.key}`)
+                .then(res => res.json())
+                .then(result => {
+                    this.setState({
+                        weatherInfo: result
+                    })
+                })
+        }
     }
 
     celsiusConverter(val) {

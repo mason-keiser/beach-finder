@@ -52,6 +52,10 @@ onClose(props) {
                   zoom={10}
                 >
                     <Marker
+                      onClick={this.onMarkerClick}
+                      name={'Current Location'}
+                    />
+                    <Marker
                       position={{lat: 33.542721, lng: -117.785355}}
                       onClick={this.onMarkerClick}
                       name={'Laguna Beach'}

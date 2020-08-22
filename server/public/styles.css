@@ -1,3 +1,12 @@
+@media screen and (max-width: 1000px){
+    .background {
+        background-color: black;
+        height: 1000px;
+        width: 1500px;
+    }
+    
+}
+
 body {
     margin: 0;
 }
@@ -141,4 +150,16 @@ header{
 
 span{
     font-size: 20px;
+}
+
+@media screen and (min-width: 1000px){
+    .background {
+        background-color: black;
+        height: 1000px;
+        width: 1400px;
+    }
+    
+    .logo {
+        text-align: center;
+    }
 }

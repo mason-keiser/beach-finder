@@ -1,14 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const mapStyles = {
-  map: {
-    width: '380px',
-    height: '650px',
-    marginLeft: '1rem',
-    border: '1px solid white' 
+
+const mapStyles = (window.screen.width >= 500)
+  ? {
+    map: {
+      width: '500px',
+      height: '600px',
+      marginLeft: '1rem',
+      border: '1px solid white'
+    }
   }
-};
+  : {
+    map: {
+      width: '380px',
+      height: '650px',
+      marginLeft: '1rem',
+      border: '1px solid white'
+    }
+  }
+
 
 export class CurrentLocation extends React.Component {
     constructor(props) {

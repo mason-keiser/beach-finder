@@ -1,3 +1,12 @@
+@media screen and (max-width: 1000px){
+    .background {
+        background-color: black;
+        height: 1000px;
+        width: 1500px;
+    }
+    
+}
+
 body {
     margin: 0;
 }
@@ -141,4 +150,42 @@ header{
 
 span{
     font-size: 20px;
+}
+
+@media screen and (min-width: 1000px){
+    .background {
+        background-color: black;
+        height: 750px;
+        width: 1150px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-right: 4rem;
+    }
+
+    .mapContainer {
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+        padding-right: 5rem;
+    }
+
+    .homeButton {
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        color: white;
+        font-family: 'Rock salt';
+        font-size: 15px;
+    }
+
+    .weather-background {
+        background-color: black;
+        height: 750px;
+        width: 1150px;
+        padding-top: 2rem;
+    }
 }

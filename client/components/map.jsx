@@ -3,13 +3,19 @@ import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 import CurrentLocation from './currentLocation';
 import { googleApi } from './api';
 
-
-const mapStyles = {
+const mapStyles = (window.screen.width >= 500)
+  ? {
+    width: '500px',
+    height: '600px',
+    border: '1px solid white'
+  }
+  : {
     width: '380px',
     height: '650px',
     marginLeft: '1rem',
-    border: '1px solid white' 
-  };
+    border: '1px solid white'
+  }
+
 
 export class MapContainer extends React.Component {
     constructor(props) {
@@ -51,6 +57,10 @@ onClose(props) {
                   style={mapStyles}
                   zoom={10}
                 >
+                    <Marker
+                      onClick={this.onMarkerClick}
+                      name={'Current Location'}
+                    />
                     <Marker
                       position={{lat: 33.542721, lng: -117.785355}}
                       onClick={this.onMarkerClick}

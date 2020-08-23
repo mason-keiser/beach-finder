@@ -156,7 +156,7 @@ span{
     .background {
         background-color: black;
         height: 750px;
-        width: 1150px;
+        width: 1250px;
     }
     
     .logo {
@@ -185,7 +185,7 @@ span{
     .weather-background {
         background-color: black;
         height: 750px;
-        width: 1150px;
+        width: 1250px;
         padding-top: 2rem;
     }
 }

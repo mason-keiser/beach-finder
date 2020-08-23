@@ -189,3 +189,18 @@ span{
         padding-top: 2rem;
     }
 }
+
+@media screen and (min-width: 1300px){
+    .background {
+        background-color: black;
+        height: 800px;
+        width: 1550px;
+    }
+
+    .weather-background {
+        background-color: black;
+        height: 800px;
+        width: 1550px;
+        padding-top: 2rem;
+    }
+}

@@ -48,14 +48,13 @@ header{
 }
 
 .homeButton {
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
+    vertical-align: bottom;
     margin: 0 auto;
     color: white;
     font-family: 'Rock salt';
     font-size: 15px;
+    text-align: center;
+    padding-top: 1rem;
 }
 
 .hint {
@@ -109,23 +108,22 @@ header{
     padding-top: 2rem;
 }
 
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
 .mapButton {
-    position: fixed;
-    right: 20%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
+   
     color: white;
     font-family: 'Rock salt';
     font-size: 15px;
 }
 
 .weatherHomeButton {
-    position: fixed;
-    left: 20%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
+    
     color: white;
     font-family: 'Rock salt';
     font-size: 15px;

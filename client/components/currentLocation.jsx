@@ -24,7 +24,6 @@ const mapStyles = (window.screen.width >= 500)
 export class CurrentLocation extends React.Component {
     constructor(props) {
         super(props);
-    
         const { lat, lng } = this.props.initialCenter;
         this.state = {
           currentLocation: {
@@ -45,10 +44,8 @@ export class CurrentLocation extends React.Component {
     recenterMap() {
         const map = this.map;
         const current = this.state.currentLocation;
-    
         const google = this.props.google;
         const maps = google.maps;
-    
         if (map) {
           let center = new maps.LatLng(current.lat, current.lng);
           map.panTo(center);
@@ -78,7 +75,6 @@ export class CurrentLocation extends React.Component {
           const maps = google.maps;
           const mapRef = this.refs.map;
           const node = ReactDOM.findDOMNode(mapRef);
-    
           let { zoom } = this.props;
           const { lat, lng } = this.state.currentLocation;
           const center = new maps.LatLng(lat, lng);
@@ -95,11 +91,7 @@ export class CurrentLocation extends React.Component {
 
     renderChildren() {
         const { children } = this.props;
-    
-        if (!children) return;
-    
         return React.Children.map(children, c => {
-          if (!c) return;
           return React.cloneElement(c, {
             map: this.map,
             google: this.props.google,

@@ -21,30 +21,19 @@ export class MapContainer extends React.Component {
     constructor(props) {
         super(props);
             this.state = {
-                showingInfoWindow: false,
                 activeMarker: {},
                 selectedPlace: {}
             }
             this.onMarkerClick = this.onMarkerClick.bind(this);
-            this.onClose = this.onClose.bind(this)
+
     }
 
-onMarkerClick(props, marker, e){
+onMarkerClick(props, marker){
   this.setState({
     selectedPlace: props,
-    activeMarker: marker,
-    showingInfoWindow: false
+    activeMarker: marker
   })
   this.props.setView('weather', {props})
-};
-
-onClose(props) {
-  if (this.state.showingInfoWindow) {
-    this.setState({
-      showingInfoWindow: false,
-      activeMarker: null
-    });
-  }
 };
 
     render() {

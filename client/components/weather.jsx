@@ -63,8 +63,10 @@ export default class Weather extends React.Component{
                 </div> 
                 </div>)
                 : null }
-                <div className= 'weatherHomeButton' onClick={() => this.props.setView('home', {})}>Home</div>
-                <div className = 'mapButton' onClick={() => this.props.setView('map', {})}>Map</div>
+                <div className='buttonRow'>
+                    <div className= 'weatherHomeButton' onClick={() => this.props.setView('home', {})}>Home</div>
+                    <div className = 'mapButton' onClick={() => this.props.setView('map', {})}>Map</div>
+                </div>
             </div>
         )
     }

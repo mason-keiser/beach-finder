@@ -102,9 +102,9 @@ onClose(props) {
                       name={'Redondo Beach'}
                     />
                     <Marker
-                      position={{lat: 33.729880, lng: -118.041670}}
+                      position={{lat: 32.700031, lng: -117.246681}}
                       onClick={this.onMarkerClick}
-                      name={'Bolsa Chica'}
+                      name={'Point Loma'}
                     />
                     <Marker
                       position={{lat: 33.458420, lng: -117.665180}}
@@ -150,6 +150,26 @@ onClose(props) {
                       position={{lat: 34.280491, lng: -119.294518}}
                       onClick={this.onMarkerClick}
                       name={'Ventura'}
+                    />
+                    <Marker
+                      position={{lat: 33.993118, lng: -118.456200}}
+                      onClick={this.onMarkerClick}
+                      name={'Venice Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.884735, lng: -118.410912}}
+                      onClick={this.onMarkerClick}
+                      name={'Manhattan Beach'}
+                    />
+                    <Marker
+                      position={{lat: 34.157530, lng: -119.223540}}
+                      onClick={this.onMarkerClick}
+                      name={'Channel Islands Beach'}
+                    />
+                    <Marker
+                      position={{lat: 33.331676, lng: -118.384437}}
+                      onClick={this.onMarkerClick}
+                      name={'Catalina'}
                     />
                 </CurrentLocation>
                 </div>

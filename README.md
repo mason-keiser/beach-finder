@@ -59,4 +59,4 @@ pgweb --db=beachFinder
 npm run dev
 ```
 # Preview
-![](server/public/images/home.png)
+![](server/public/images/home.png)![](server/public/images/map.png)![](server/public/images/weather.png)

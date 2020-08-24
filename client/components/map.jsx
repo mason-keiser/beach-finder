@@ -5,7 +5,7 @@ import { googleApi } from './api';
 
 const mapStyles = (window.screen.width >= 500)
   ? {
-    width: '500px',
+    width: '600px',
     height: '600px',
     border: '1px solid white'
   }

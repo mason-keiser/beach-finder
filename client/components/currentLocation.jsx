@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 const mapStyles = (window.screen.width >= 500)
   ? {
     map: {
-      width: '500px',
+      width: '600px',
       height: '600px',
       marginLeft: '1rem',
       border: '1px solid white'

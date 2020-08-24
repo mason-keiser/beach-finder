@@ -169,16 +169,7 @@ span{
         padding-right: 5rem;
     }
 
-    .homeButton {
-        position: fixed;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, -50%);
-        margin: 0 auto;
-        color: white;
-        font-family: 'Rock salt';
-        font-size: 15px;
-    }
+ 
 
     .weather-background {
         background-color: black;
@@ -192,13 +183,20 @@ span{
     .background {
         background-color: black;
         height: 800px;
-        width: 1550px;
+        width: 1500px;
     }
 
     .weather-background {
         background-color: black;
         height: 800px;
-        width: 1550px;
+        width: 1500px;
         padding-top: 2rem;
+    }
+
+    .mapContainer {
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+        padding-right: 5rem;
     }
 }

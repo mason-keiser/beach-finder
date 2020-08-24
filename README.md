@@ -1,5 +1,5 @@
-# beach-finder
-An application for users to find the nearest beach that will display the weather at the beach selected by the user
+# Beach Weather
+An application for users to find the nearest beach in SoCal and that will display the weather at the beach selected by the user
 * Utilizes Google Maps API and OpenWeatherMaps API
 
 Link: https://bw.masonkeiser.com/
@@ -14,12 +14,8 @@ Link: https://bw.masonkeiser.com/
 * Bootstrap 4
 * AWS EC2
 # Features
-* User can view a catalog of products
-* User can view the details of an individual product
-* User can add a product to their cart
-* User can view a synopsis of their cart
-* User can place an order to the database
-* User can clear all items out of their cart
+* User can view weather of current location
+* User can click on a marker to view the weather at the selected Southern California beach
 # Development
 ## System Requirements
 * Node.js 10 or higher

@@ -1,7 +1,6 @@
 # Beach Weather
 An application for users to find the nearest beach in SoCal and that will display the weather at the beach selected by the user
 * Utilizes Google Maps API and OpenWeatherMaps API
-* Made for mobile use primarily but will also work on desktop and ipad (landscape mode)
 
 Link: https://bw.masonkeiser.com/
 # Technologies Used

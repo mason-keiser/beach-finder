@@ -204,13 +204,17 @@ span{
 
 @media screen and (min-width: 700px) and (min-height: 700px) {
     .cm-container {
-        width: 96vw;
+        width: 97vw;
     }
 }
 
 @media screen and (orientation: portrait) and (min-width: 375px) and (max-height: 813px) {
     .background {
         height: 100vh;
+    }
+
+    .cm-container {
+        margin-left: 0.5rem ;
     }
 }
 
@@ -253,7 +257,7 @@ span{
     }
 }
 
-@media screen and (min-width: 1300px) and (min-height: 1100px){
+@media screen and (min-width: 1400px){
     .background {
         background-color: black;
         height: 100vh;

@@ -11,8 +11,9 @@ body {
 
 .background {
     background-color: black;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 header{
@@ -120,7 +121,6 @@ header{
 }
 
 .weatherHomeButton {
-    
     color: white;
     font-family: 'Rock salt';
     font-size: 15px;
@@ -207,7 +207,13 @@ span{
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (orientation: portrait) and (max-width: 376px) and (max-height: 813px) {
+    .background {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 600px){
     .background {
         background-color: black;
         height: 100vh;

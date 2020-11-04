@@ -10,7 +10,7 @@ const mapStyles = (window.screen.width >= 500)
     border: '1px solid white'
   }
   : {
-    width: '380px',
+    width: '90vw',
     height: '650px',
     marginLeft: '1rem',
     border: '1px solid white'
@@ -43,7 +43,7 @@ onMarkerClick(props, marker){
                 <CurrentLocation
                   centerAroundCurrentLocation
                   google={this.props.google}
-                  style={mapStyles}
+                  className='cm-container'
                   zoom={10}
                 >
                     <Marker
@@ -161,8 +161,9 @@ onMarkerClick(props, marker){
                       name={'Catalina'}
                     />
                 </CurrentLocation>
-                </div>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>
+                </div>
+    
             </div>
         ); 
     }

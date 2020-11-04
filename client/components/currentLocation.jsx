@@ -13,8 +13,8 @@ const mapStyles = (window.screen.width >= 500)
   }
   : {
     map: {
-      width: '380px',
-      height: '650px',
+      width: '90vw',
+      height: '80vh',
       marginLeft: '1rem',
       border: '1px solid white'
     }
@@ -101,10 +101,10 @@ export class CurrentLocation extends React.Component {
     }
 
     render() {
-        const style = Object.assign({}, mapStyles.map);
+       
         return (
           <div>
-            <div style={style} ref="map">
+            <div className='cm-container' ref="map">
              Loading map...
             </div>
            {this.renderChildren()}

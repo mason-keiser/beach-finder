@@ -208,7 +208,7 @@ span{
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 376px) and (max-height: 813px) {
+@media screen and (orientation: portrait) and (min-width: 375px) and (max-height: 813px) {
     .background {
         height: 100vh;
     }

@@ -77,7 +77,7 @@ export class CurrentLocation extends React.Component {
             google: this.props.google,
             mapCenter: this.state.currentLocation
           });
-        });
+        })
     }
 
     render() {

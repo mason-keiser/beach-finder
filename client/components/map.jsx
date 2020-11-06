@@ -16,7 +16,7 @@ export class MapContainer extends React.Component {
     }
 
 componentDidMount() {
-  this.islocation()
+
 }
 
 onMarkerClick(props, marker){
@@ -37,7 +37,9 @@ islocation() {
     render() {
         return (
             <div className='background'>
+             
                 <div className='mapContainer'>
+                <Map google={this.props.google} style={{height: 0, width: 0}}>
                 <CurrentLocation
                   centerAroundCurrentLocation
                   google={this.props.google}
@@ -159,12 +161,14 @@ islocation() {
                       name={'Catalina'}
                     />
                 </CurrentLocation>
+                </Map>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>
+                
                 </div>
-    
+                
             </div>
         ); 
-    }
+        }
 }
 
 export default GoogleApiWrapper({

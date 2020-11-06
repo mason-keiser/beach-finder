@@ -8,11 +8,16 @@ export class MapContainer extends React.Component {
         super(props);
             this.state = {
                 activeMarker: {},
-                selectedPlace: {}
+                selectedPlace: {},
+                locsettings: ''
             }
             this.onMarkerClick = this.onMarkerClick.bind(this);
-
+            this.islocation = this.islocation.bind(this);
     }
+
+componentDidMount() {
+  this.islocation()
+}
 
 onMarkerClick(props, marker){
   this.setState({
@@ -21,6 +26,13 @@ onMarkerClick(props, marker){
   })
   this.props.setView('weather', {props})
 };
+
+islocation() {
+  const quer =
+        navigator.permissions.query({ name: 'geolocation' })
+        .then(res => {return res})
+        .then(result => this.setState({locsettings: result.state}))
+}
 
     render() {
         return (

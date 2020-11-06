@@ -161,8 +161,9 @@ islocation() {
                       name={'Catalina'}
                     />
                 </CurrentLocation>
-                </Map>
                 <div className= 'homeButton' onClick={() => this.props.setView('home', {})}>Home</div>
+                </Map>
+
                 
                 </div>
                 

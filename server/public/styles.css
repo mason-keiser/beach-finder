@@ -231,7 +231,8 @@ span{
 
 @media screen and (min-width: 700px) and (min-height: 700px) {
     .cm-container {
-        width: 97vw;
+        width: 100vw;
+        margin-left: 0;
     }
 
     .mapContainer{
@@ -302,7 +303,8 @@ span{
     }
 
     .cm-container {
-        width: 99vw;
+        width: 100vw;
+        margin-left: 0;
     }
 
     .weather-background {
@@ -320,5 +322,19 @@ span{
         margin-right: auto;
         margin-left: auto;
         padding-right: 5rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1460px) and (min-height: 700px) {
+    body{
+        overflow: auto;
+    }
+
+    .background{
+        padding-bottom: 0;
+    } 
+
+    .cm-container {
+        height: 88vh;
     }
 }

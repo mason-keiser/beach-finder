@@ -248,6 +248,11 @@ span{
     .cm-container {
         margin-left: 0.5rem ;
     }
+
+    .weather-background {
+        height: 100vh;
+        max-height: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (min-height: 600px){

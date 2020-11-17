@@ -55,11 +55,12 @@ export default class Weather extends React.Component{
                 {( typeof this.state.weatherInfo.main != "undefined") ? (
                 <div> 
                 <div className="weather-box">
-                    <div className="weather">{this.state.weatherInfo.weather[0].main}</div>
+
                     <div className="temp">{this.celsiusConverter(this.state.weatherInfo.main.temp) }</div>
-                    <div className="weather"> feels like {this.celsiusConverter(this.state.weatherInfo.main.feels_like)}</div>
+
                     <div className="weather">{this.state.weatherInfo.weather[0].description}</div>
                     <div className="temps">Wind: {this.state.weatherInfo.wind.speed} mph</div>
+                    <div className="weather"> feels like {this.celsiusConverter(this.state.weatherInfo.main.feels_like)}</div>
                     <div className='joke'> Ever wonder just how many clouds are in the sky? No need to wonder anymore.. There('s) only <span>{this.state.weatherInfo.clouds.all}</span> clouds out today!</div>
                 </div> 
                 </div>)

@@ -64,7 +64,9 @@ export default class Weather extends React.Component{
                     <div className='joke'> Ever wonder just how many clouds are in the sky? No need to wonder anymore.. There('s) only <span>{this.state.weatherInfo.clouds.all}</span> clouds out today!</div>
                 </div> 
                 </div>)
-                : null }
+                : (
+                    <div className="weather" style={{ color: 'white', fontFamily: 'Rock salt', textAlign: 'center', margin: '5rem'}}>There was an error loading this beaches weather information</div>
+                )}
                 <div className='buttonRow'>
                     <div className= 'weatherHomeButton' onClick={() => this.props.setView('home', {})}>Home</div>
                     <div className = 'mapButton' onClick={() => this.props.setView('map', {})}>Map</div>

@@ -4,6 +4,7 @@ An application for users to find the nearest beach in SoCal and display the weat
 * Utilizes Google Maps API and OpenWeatherMaps API
 
 Link: https://bw.masonkeiser.com/
+
 # Technologies Used
 * React.js
 * Node.js
